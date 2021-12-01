@@ -68,9 +68,9 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = true
 offline = false
 targetpc = '0'
-ownerNumber = ["6283162388082@s.whatsapp.net","6283148897828@s.whatsapp.net","6283162388082@s.whatsapp.net","6283148897828@s.whatsapp.net"]
-fake = '𝙸𝚖 𝙽𝚍𝚊𝚊𝙱𝚘𝚝𝚣'
-fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙽𝙰𝙽𝙳𝙰 𝚂𝚃𝚈𝙻𝙴*_'
+ownerNumber = ["62858770642900@s.whatsapp.net","62858770642900@s.whatsapp.net","62858770642900@s.whatsapp.net","62858770642900@s.whatsapp.net"]
+fake = '𝙸𝚖 Faisal𝙱𝚘𝚝𝚣'
+fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 FAISAL 𝚂𝚃𝚈𝙻𝙴*_'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -334,7 +334,7 @@ module.exports = xdev = async (xdev, dev) => {
 				if (!isAntiLink) return
 				if (isGroupAdmins) return
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup, botpunya auto kick lho hehe:(`)
+				reply(` *「 GROUP BOKEP TERDETEKSI:V 」*\nKamu mengirimkan link grup, auto kick lho hehe:(`)
 				setTimeout(() => {
 				xdev.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
 				}, 0)
@@ -856,7 +856,7 @@ teks += `Video : ${ted.videoCount}`
 xdev.sendMessage(from, huft, image, {quoted: ftroli, caption: teks})
 break
 case 'gogle':
-if (!q) return reply('Mau cari apa kak?')
+if (!q) return reply('Mau cari bokep?:v')
 anu = await fetchJson(`https://xdev-api.herokuapp.com/google?q=${q}`)
 		   for (let co of anu.result) {
 					  teks += `
@@ -890,7 +890,7 @@ case 'antilink':
 					if (!isBotGroupAdmins) return reply('Bot jadiin admin dlu')
 					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}antilink 1`)
 					if (Number(args[0]) === 1) {
-						if (isAntiLink) return reply('Sudah Aktif Kak')
+						if (isAntiLink) return reply('Sudah Aktif Coy Jan lupa sewa Ketik .owner')
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('_Success mengaktifkan antilink digroup ini!_')
@@ -1271,7 +1271,7 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 ini_list.push({
-"displayName": '𝙸 𝙰𝙼 𝙽𝙰𝙽𝙳𝙰 𝚂𝚃𝚈𝙻𝙴',
+"displayName": '𝙸 𝙰𝙼 FAISAL 𝚂𝚃𝚈𝙻𝙴',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1279,7 +1279,7 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${ini_list.length} kontak`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Tu Kak Orang Ganz >_<',text,{quoted: hehe})
+xdev.sendMessage(from,'Tu Kak Orang Gamteng Faisal Tuh >_<',text,{quoted: hehe})
 break
 case 'style':
 				  if(!q) return reply('Masukkan teks!')
@@ -2274,7 +2274,7 @@ let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'NDAABOTZ',
+"displayName": 'SALBOTZ',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2286,17 +2286,17 @@ xdev.sendMessage(from,'𝙽𝚒𝚑 𝙾𝚠𝚗𝚎𝚛 𝙺𝚞 𝙺𝚊𝚔, 
 }
 if (button == '⎙ INSTAGRAM') {
 console.log('INSTAGRAM')
-xdev.sendMessage(from, `*Stalkerin Aja Tuh*\n*https://instagram.com/nnda.krnwn_*`, text, {quoted: dev})
+xdev.sendMessage(from, `*Stalkerin Aja Tuh*\n*GADA IG:V_*`, text, {quoted: dev})
 }
 if (button == '🔍 NEKOPOI') {
 console.log('YOUTUBE')
-xdev.sendMessage(from, `*Subscribe Chanel Owner Ya*\n_https://youtube.com/channel/UCUD6SkJfxrZXU0NeEO06-JA_`, text, {quoted: dev})
+xdev.sendMessage(from, `*Subscribe Chanel Owner Ya*\n_https://youtube.com/channel/UC_vf3Ole7QT7ky_r2Zji6mw_`, text, {quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`@𝙽𝚊𝚗𝚍𝚊 𝚂𝚝𝚢𝚕𝚎:~ ${err}`)
+if (err) return reply(`@FAISAL:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
