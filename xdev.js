@@ -74,14 +74,14 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = true
 offline = false
 targetpc = '0'
-ownerNumber = ["6283146208804@s.whatsapp.net","6283146208804@s.whatsapp.net","6283146208804@s.whatsapp.net","6283146208804@s.whatsapp.net"]
-fake = '⚘ђ૯૨ʍαท вѳτżꪶོꫂ'
-noowner = '6283146208804'
+ownerNumber = ["62858770642900@s.whatsapp.net","62858770642900@s.whatsapp.net","62858770642900@s.whatsapp.net","62858770642900@s.whatsapp.net"]
+fake = '⚘faisal вѳτżꪶོꫂ'
+noowner = '62858770642900'
 botname = '⚘ђ૯૨ʍαท вѳτżꪶོꫂ'
 batre = 'tidak terdeteksi'
-subrekhermanchanel = 'Subscribe herman Chanel'
-owner = 'Hermansyahོ'
-fake1 = '_*© ⚘ђ૯૨ʍαท вѳτżꪶོꫂ*_'
+subrek = 'Subscribe https://youtube.com/channel/UC_vf3Ole7QT7ky_r2Zji6mw'
+owner = 'FAISAL'
+fake1 = '_*© ⚘Faisal вѳτżꪶོꫂ*_'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -346,7 +346,7 @@ module.exports = xdev = async (xdev, dev) => {
 				if (!isAntiLink) return
 				if (isGroupAdmins) return
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup, botpunya auto kick lho hehe:(`)
+				reply(` *「 GROUP BOKEP TERDETEKSI:V 」*\nKamu mengirimkan link grup, auto kick lho hehe:(`)
 				setTimeout(() => {
 				xdev.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
 				}, 0)
